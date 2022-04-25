@@ -1,0 +1,17 @@
+<!-- <form action="POST">
+    {% csrf_token %}
+    title{{ form.title }}
+    <br>
+    except{{ form.except }}
+    <br>
+    content{{ form.content }}
+    <button type="submit">Submit</button>
+</form> -->
+
+<form method="post">
+{% csrf_token %}
+title{{ form.title }}
+<br>
+content{{ form.content }}
+<button type="submit">Submit</button>
+</form>
